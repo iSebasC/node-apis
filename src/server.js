@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
+
 
 const usersRouter = require('./routes/users');
 const estateRouter = require('./routes/estate');
-const investmentRouter = require('./routes/investments');
+// const investmentRouter = require('./routes/investments');
 
 //Usuario
 app.use('/users', usersRouter);
